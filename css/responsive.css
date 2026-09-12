@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ICATI Jatim — Responsif
+   ICATI JATIM — Responsif
    Desktop → tablet → ponsel
    ========================================================================== */
 
@@ -16,6 +16,22 @@
   }
   .hero__branch {
     width: min(40vw, 420px);
+  }
+}
+
+/* ---------- < 1024px : desktop kecil ---------- */
+@media (max-width: 1024px) {
+  /* "ICATI JATIM" lebih panjang, jadi brand & nav dikecilkan sedikit
+     supaya header tetap muat dalam satu baris */
+  .brand__title {
+    font-size: 1.7rem;
+  }
+  .site-header.is-compact .brand__title {
+    font-size: 1.5rem;
+  }
+  .nav-link {
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
   }
 }
 
@@ -136,6 +152,11 @@
 
   .hero__title {
     font-size: clamp(2.4rem, 12vw, 3.4rem);
+  }
+  /* Nama lengkap panjang — dikecilkan supaya tetap satu baris di ponsel */
+  .hero__title-sub {
+    font-size: 0.6rem;
+    letter-spacing: 0.22em;
   }
   .hero__actions .btn {
     width: 100%;

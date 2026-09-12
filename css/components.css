@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ICATI Jatim — Komponen
+   ICATI JATIM — Komponen
    Header, hero, kartu gulungan, garis waktu, jalur pendaftaran, footer
    ========================================================================== */
 
@@ -82,6 +82,7 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
+  white-space: nowrap;
   color: var(--charcoal);
   padding: 0.5rem 0;
   transition: color var(--t-fast);
@@ -356,6 +357,8 @@
   letter-spacing: 0.42em;
   text-transform: uppercase;
   color: var(--brown-deep);
+  /* Nama lengkap lebih panjang daripada batas 66ch paragraf biasa */
+  max-width: none;
   margin-bottom: var(--space-4);
 }
 .hero__tagline {
@@ -1109,6 +1112,10 @@
   letter-spacing: 0.08em;
   color: var(--charcoal-soft);
 }
+/* Nama lengkap lebih panjang daripada batas 66ch paragraf biasa */
+.footer-bottom p {
+  max-width: none;
+}
 .footer-bottom a {
   color: var(--charcoal-soft);
   text-decoration: none;
@@ -1416,7 +1423,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   Galeri acara (Tentang ICATI Jatim) — satu baris berisi 3 poster
+   Galeri acara (Tentang ICATI JATIM) — satu baris berisi 3 poster
    -------------------------------------------------------------------------- */
 .event-gallery {
   display: grid;

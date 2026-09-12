@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ICATI Jatim — main.js
+   ICATI JATIM — main.js
    Header, menu seluler, pencarian, animasi scroll, paralaks
    ========================================================================== */
 
@@ -69,12 +69,12 @@
     {
       href: "index.html",
       title: "Beranda",
-      desc: "Halaman utama ICATI Jatim — perkenalan, program, dan jalur menuju pendaftaran.",
+      desc: "Halaman utama ICATI JATIM — perkenalan, program, dan jalur menuju pendaftaran.",
       keys: "beranda home utama ikati selamat datang",
     },
     {
       href: "tentang.html",
-      title: "Tentang ICATI Jatim",
+      title: "Tentang ICATI JATIM",
       desc: "Siapa kami, visi & tujuan, apa yang kami lakukan, serta mengapa Taiwan.",
       keys: "tentang tentang icati siapa kami visi tujuan verifikasi dokumen overseas chinese",
     },
@@ -87,7 +87,7 @@
     {
       href: "poster.html",
       title: "Galeri Poster & Panduan",
-      desc: "Galeri poster ICATI Jatim, panduan komprehensif perguruan tinggi Taiwan, dan brosur universitas.",
+      desc: "Galeri poster ICATI JATIM, panduan komprehensif perguruan tinggi Taiwan, dan brosur universitas.",
       keys: "galeri poster informasi gambar universitas beasiswa panduan pdf dokumen brosur jadwal",
     },
   ];
@@ -258,15 +258,15 @@
         const m = src.match(/(\d{4})-(\d{2})-(\d{2})/);
         const date = m
           ? parseInt(m[3], 10) + " " + bulan[parseInt(m[2], 10) - 1] + " " + m[1]
-          : "Poster ICATI Jatim";
+          : "Poster ICATI JATIM";
         return (
           '<a class="gallery__item" href="' +
           src +
-          '" data-lightbox-item role="listitem" aria-label="Poster ICATI Jatim — ' +
+          '" data-lightbox-item role="listitem" aria-label="Poster ICATI JATIM — ' +
           date +
           '"><img src="' +
           src +
-          '" alt="Poster ICATI Jatim — ' +
+          '" alt="Poster ICATI JATIM — ' +
           date +
           '" loading="lazy"><span class="gallery__cap">' +
           date +
