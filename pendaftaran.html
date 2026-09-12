@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Info Pendaftaran | ICATI Jatim — Jalur Beasiswa &amp; Kuliah di Taiwan</title>
+  <meta name="description" content="Info Pendaftaran ICATI Jatim — dua jalur menuju Taiwan: Beasiswa dan Kuliah. Informasi persyaratan, universitas, jadwal, dan dokumen untuk calon mahasiswa Indonesia.">
+  <meta property="og:title" content="Info Pendaftaran — ICATI Jatim">
+  <meta property="og:description" content="Dua jalur menuju Taiwan: Beasiswa atau Kuliah. Informasi persyaratan, dokumen, dan jadwal universitas.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+  <link rel="canonical" href="https://www.icati.example/pendaftaran.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png?v=3">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png?v=3">
+</head>
+<body data-page="pendaftaran">
+
+  <a class="skip-link" href="#konten">Lompat ke konten utama</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="ICATI Jatim — kembali ke Beranda">
+        <img class="brand__logo" src="logo.jpeg" alt="Logo ICATI Jatim — Ikatan Citra Alumni Taiwan Indonesia" width="46" height="46">
+        <span class="brand__title font-brush">ICATI Jatim</span>
+      </a>
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a class="nav-link" data-page="beranda" href="index.html">Beranda</a>
+        <a class="nav-link" data-page="tentang" href="tentang.html">Tentang ICATI Jatim</a>
+        <a class="nav-link" data-page="pendaftaran" href="pendaftaran.html">Info Pendaftaran</a>
+        <a class="nav-link" data-page="poster" href="poster.html">Galeri</a>
+      </nav>
+      <button class="search-btn" type="button" data-search-open aria-label="Buka pencarian">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      </button>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Buka menu">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h12"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menu seluler -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <button class="mobile-menu__close" type="button" data-menu-close aria-label="Tutup menu">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
+    </button>
+    <nav aria-label="Menu seluler">
+      <a class="mobile-menu__link" href="index.html">Beranda</a>
+      <a class="mobile-menu__link" href="tentang.html">Tentang ICATI Jatim</a>
+      <a class="mobile-menu__link" href="pendaftaran.html">Info Pendaftaran</a>
+      <a class="mobile-menu__link" href="poster.html">Galeri Poster</a>
+    </nav>
+    <p class="mobile-menu__meta">Ikatan Citra Alumni Taiwan Indonesia · Sejak 1987</p>
+  </div>
+
+  <!-- Overlay pencarian -->
+  <div class="search-overlay" id="search-overlay" aria-hidden="true">
+    <button class="search-overlay__close" type="button" data-search-close aria-label="Tutup pencarian">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
+    </button>
+    <div class="search-overlay__box">
+      <p class="search-overlay__label">Pencarian</p>
+      <input class="search-overlay__input" type="search" data-search-input placeholder="Cari halaman…" aria-label="Kata kunci pencarian">
+      <div class="search-overlay__results" data-search-results></div>
+    </div>
+  </div>
+
+  <main id="konten">
+
+    <!-- ===================== DUA JALUR ===================== -->
+    <section class="section" aria-labelledby="jalur-title">
+      <div class="container">
+        <div class="section__header reveal">
+          <p class="eyebrow">Info Pendaftaran</p>
+          <h1 class="section__title" id="jalur-title">Pilih jalur yang <em>tepat untukmu</em></h1>
+          <p class="section__lead">Mulailah dari satu pertanyaan sederhana: <strong>“Saya ingin mencari beasiswa”</strong> atau <strong>“Saya ingin mendaftar kuliah.”</strong> ICATI Jatim berperan sebagai <strong>sumber informasi dan pendamping</strong> — kami tidak mendaftarkanmu ke universitas, tetapi memastikan kamu punya informasi dan dokumen yang tepat.</p>
+        </div>
+
+        <div class="pathways">
+
+          <!-- ============ JALUR BEASISWA ============ -->
+          <article class="path reveal reveal--delay-1" aria-labelledby="path-kuliah-title">
+            <div class="path__header">
+              <img class="path__seal" src="assets/img/stamp.png?v=3" alt="">
+              <div>
+                <h2 class="path__title" id="path-kuliah-title">Kuliah</h2>
+                <p class="path__sub">Saya ingin mendaftar kuliah</p>
+              </div>
+            </div>
+
+            <div class="path__block">
+              <p class="path__block-head">Deskripsi Pendaftaran Kuliah</p>
+              <p class="step__desc">Ada dua jalur utama untuk program S1:</p>
+              <ul class="path__list" style="margin-top:1rem;">
+                <li><strong>Mandiri / Direct Admission</strong> — mendaftar langsung ke portal tiap universitas; fleksibel, boleh mendaftar ke banyak universitas sekaligus.</li>
+                <li><strong>GRSQ</strong> — portal bersama hingga 4 pilihan dalam satu formulir; jika diterima wajib mengambil kursi (menolak = diblokir 1 tahun).</li>
+              </ul>
+              <p class="step__desc" style="margin-top:1rem;">Tersedia juga program persiapan &amp; vokasi: <strong>Yin Fu Ban</strong> (10 minggu), <strong>Qiao Da</strong> (1 tahun di NTNU), <strong>Hai Qing Ban</strong> (vokasi D2), serta <strong>Program 1+4 / PMP</strong>.</p>
+            </div>
+
+            <div class="path__block">
+              <p class="path__block-head">Pilihan Universitas</p>
+              <p class="step__desc">Universitas nasional dan swasta di Taiwan menerima pendaftaran OC Mandiri dengan jadwal masing-masing. Lihat daftar &amp; jadwalnya di bagian <a href="#universitas-unggulan">Universitas Unggulan</a> di bawah.</p>
+            </div>
+
+            <div class="path__block">
+              <p class="path__block-head">Program Studi</p>
+              <ul class="path__list">
+                <li>Program berbahasa pengantar Mandarin — wajib sertifikat <strong>TOCFL A2</strong> minimal (B1/B2 untuk universitas top).</li>
+                <li>Program berbahasa Inggris (English-taught) — umumnya minimal <strong>IELTS 5.5</strong> (setara CEFR B2) atau TOEFL iBT.</li>
+                <li>Jalur vokasi (Hai Qing Ban): seni kuliner, baking, desain interior.</li>
+              </ul>
+            </div>
+
+            <div class="path__block">
+              <p class="path__block-head">Persyaratan</p>
+              <ul class="path__list">
+                <li>Status <strong>Overseas Chinese (OC)</strong> — siswa Indonesia keturunan Tionghoa.</li>
+                <li>6 dokumen standar (lihat bagian <em>Dokumen</em> di bawah).</li>
+                <li>Dokumen wajib <strong>diverifikasi &amp; distempel ICATI Jatim</strong> sebelum diunggah ke portal.</li>
+              </ul>
+            </div>
+
+            <div class="path__block">
+              <p class="path__block-head">Tahap Pendaftaran</p>
+              <ul class="path__list">
+                <li>1. Siapkan &amp; verifikasi dokumen di ICATI Jatim (Kedungsari 45, Surabaya).</li>
+                <li>2. Daftar via portal universitas (Mandiri) atau portal GRSQ.</li>
+                <li>3. Tunggu pengumuman hasil — lihat jadwal per universitas.</li>
+                <li>4. Urus visa &amp; persiapan keberangkatan.</li>
+              </ul>
+            </div>
+
+            <div class="path__block">
+              <p class="path__block-head">Dokumen</p>
+              <ul class="path__list">
+                <li>Nama Mandarin resmi (Hanzi) — konsisten di semua berkas</li>
+                <li>Surat keterangan masih sekolah (Certificate of Active Enrollment)</li>
+                <li>Surat keterangan ranking paralel</li>
+                <li>Transkrip nilai rapor (S1–S4)</li>
+                <li>Paspor &amp; Kartu Keluarga (KK)</li>
+                <li>Rencana studi &amp; autobiografi</li>
+              </ul>
+            </div>
+
+            <div class="path__block">
+              <p class="path__block-head">Konsultasi &amp; Bantuan</p>
+              <p class="step__desc" style="margin-bottom:1rem;">Siap memulai? Hubungi kami dan kami bantu siapkan langkah pertamamu.</p>
+              <div class="path__action">
+                <a class="btn" href="https://wa.me/6281235669988" rel="noopener" target="_blank">Hubungi via WhatsApp</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ============ JALUR KULIAH ============ -->
+          <article class="path reveal" aria-labelledby="path-beasiswa-title">
+            <div class="path__header">
+              <img class="path__seal" src="assets/img/stamp.png?v=3" alt="">
+              <div>
+                <h2 class="path__title" id="path-beasiswa-title">Beasiswa</h2>
+                <p class="path__sub">Saya ingin mencari beasiswa</p>
+              </div>
+            </div>
+
+            <div class="path__block">
+              <p class="path__block-head">Deskripsi Beasiswa</p>
+              <p class="step__desc">ICATI Jatim mendampingi siswa menuju berbagai skema beasiswa di Taiwan. Prinsip utamanya: <strong>beasiswa adalah penghargaan atas usaha</strong>, bukan bantuan sosial — seluruh beasiswa ditinjau ketat setiap semester berdasarkan IPK.</p>
+              <ul class="path__list" style="margin-top:1rem;">
+                <li><strong>Beasiswa ICATI Jatim</strong> — didanai alumni Taiwan asal Jawa Timur, Rp 16.500.000/semester, untuk siswa Jawa Timur berprestasi.</li>
+                <li><strong>Beasiswa Pemerintah Taiwan (OCAC)</strong> — untuk mahasiswa baru, dibuka sekitar Januari–Februari tahun masuk.</li>
+                <li><strong>Beasiswa Internal Universitas</strong> — dinilai otomatis dari berkas pendaftaran (GPA rapor, peringkat kelas, rencana studi, sertifikat bahasa).</li>
+              </ul>
+            </div>
+
+            <div class="path__block">
+              <p class="path__block-head">Persyaratan</p>
+              <ul class="path__list">
+                <li>Beasiswa ICATI Jatim: siswa asal Jawa Timur + sertifikat <strong>TOCFL A2</strong> (atau lebih tinggi) yang masih berlaku — tanpa itu, pengajuan ditolak otomatis.</li>
+                <li>Beasiswa OCAC: nilai rapor sangat tinggi (<strong>IPK 90+</strong>) dan kemahiran Mandarin minimal <strong>TOCFL B1</strong>.</li>
+                <li>Beasiswa internal: dinilai dari berkas pendaftaran; untuk tahun kedua wajib mempertahankan peringkat kelas (top 10–30%).</li>
+              </ul>
+            </div>
+
+            <div class="path__block">
+              <p class="path__block-head">Universitas / Program</p>
+              <p class="step__desc">Beasiswa tersedia di berbagai universitas nasional dan swasta Taiwan. Lihat daftar universitas beserta jadwal pendaftarannya di bagian <a href="#universitas-unggulan">Universitas Unggulan</a> di bawah halaman ini.</p>
+            </div>
+
+            <div class="path__block">
+              <p class="path__block-head">Timeline</p>
+              <ul class="path__list">
+                <li>Beasiswa OCAC: dibuka sekitar <strong>Januari–Februari</strong> tahun masuk.</li>
+                <li>Beasiswa internal: dievaluasi bersamaan dengan hasil pendaftaran universitas.</li>
+                <li>Beasiswa ICATI Jatim: mengikuti jadwal seleksi yang diumumkan ICATI Jatim.</li>
+              </ul>
+            </div>
+
+            <div class="path__block">
+              <p class="path__block-head">Dokumen yang Diperlukan</p>
+              <ul class="path__list">
+                <li>Transkrip nilai rapor / GPA</li>
+                <li>Sertifikat TOCFL (minimal A2)</li>
+                <li>Rencana studi &amp; autobiografi</li>
+                <li>Berkas pendaftaran universitas (paspor, KK, dll.)</li>
+              </ul>
+            </div>
+
+            <div class="path__block">
+              <p class="path__block-head">Konsultasi &amp; Bantuan</p>
+              <p class="step__desc" style="margin-bottom:1rem;">Bicarakan minatmu pada tim ICATI Jatim — kami bantu arahkan ke jalur yang sesuai.</p>
+              <div class="path__action">
+                <a class="btn btn--primary" href="https://wa.me/6281235669988" rel="noopener" target="_blank">Hubungi via WhatsApp</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== UNIVERSITAS UNGGULAN ===================== -->
+    <section class="section section--mist" id="universitas-unggulan" aria-labelledby="universitas-title">
+      <div class="container">
+        <div class="section__header reveal">
+          <p class="eyebrow">Top Universities</p>
+          <h2 class="section__title" id="universitas-title">Universitas <em>Unggulan</em></h2>
+          <p class="section__lead">Linimasa pendaftaran jalur OC Mandiri untuk masuk tahun akademik 2027 (intake musim gugur), bersumber dari Panduan Komprehensif ICATI Jatim. Perhatikan tenggat waktu — sistem admisi Taiwan beroperasi tanpa toleransi keterlambatan.</p>
+        </div>
+
+        <div class="table-wrap reveal">
+          <table class="uni-table">
+            <caption class="sr-only">Linimasa pendaftaran OC Mandiri universitas Taiwan</caption>
+            <thead>
+              <tr>
+                <th scope="col">Universitas</th>
+                <th scope="col">Periode Pendaftaran (OC Mandiri)</th>
+                <th scope="col">Perkiraan Pengumuman</th>
+                <th scope="col">Portal</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Universitas">National Taiwan University (NTU)</td>
+                <td data-label="Periode">3 Agu – 17 Sep 2026</td>
+                <td data-label="Pengumuman">24 Nov 2026</td>
+                <td data-label="Portal"><a href="https://admissions.ntu.edu.tw" target="_blank" rel="noopener">admissions.ntu.edu.tw</a></td>
+              </tr>
+              <tr>
+                <td data-label="Universitas">National Taiwan Normal University (NTNU)</td>
+                <td data-label="Periode">3 Agu – 17 Sep 2026</td>
+                <td data-label="Pengumuman">24 Nov 2026</td>
+                <td data-label="Portal"><a href="https://bds.oia.ntnu.edu.tw/bds/ocapply" target="_blank" rel="noopener">bds.oia.ntnu.edu.tw</a></td>
+              </tr>
+              <tr>
+                <td data-label="Universitas">National Taiwan Univ. of Science &amp; Tech. (NTUST)</td>
+                <td data-label="Periode">3 Agu – 17 Sep 2026</td>
+                <td data-label="Pengumuman">24 Nov 2026</td>
+                <td data-label="Portal"><a href="https://admission.ntust.edu.tw" target="_blank" rel="noopener">admission.ntust.edu.tw</a></td>
+              </tr>
+              <tr>
+                <td data-label="Universitas">National Taipei Univ. of Technology (NTUT)</td>
+                <td data-label="Periode">1 Agu – 30 Nov 2026</td>
+                <td data-label="Pengumuman">26 Jan 2027</td>
+                <td data-label="Portal">Portal resmi universitas</td>
+              </tr>
+              <tr>
+                <td data-label="Universitas">National Cheng Kung University (NCKU)</td>
+                <td data-label="Periode">10 Agu – 2 Okt 2026</td>
+                <td data-label="Pengumuman">28 Des 2026</td>
+                <td data-label="Portal"><a href="https://ocsadm.oia.ncku.edu.tw" target="_blank" rel="noopener">ocsadm.oia.ncku.edu.tw</a></td>
+              </tr>
+              <tr>
+                <td data-label="Universitas">National Tsing Hua University (NTHU)</td>
+                <td data-label="Periode">14 Agu – 15 Okt 2026</td>
+                <td data-label="Pengumuman">22 Jan 2027</td>
+                <td data-label="Portal"><a href="https://oga-ocsapply.vm.nthu.edu.tw" target="_blank" rel="noopener">oga-ocsapply.vm.nthu.edu.tw</a></td>
+              </tr>
+              <tr>
+                <td data-label="Universitas">National Chengchi University (NCCU)</td>
+                <td data-label="Periode">8 Okt – 16 Nov 2026</td>
+                <td data-label="Pengumuman">28 Jan 2027</td>
+                <td data-label="Portal"><a href="https://ocsexam.nccu.edu.tw" target="_blank" rel="noopener">ocsexam.nccu.edu.tw</a></td>
+              </tr>
+              <tr>
+                <td data-label="Universitas">National Yang Ming Chiao Tung Univ. (NYCU)</td>
+                <td data-label="Periode">1 Sep – 30 Sep 2026</td>
+                <td data-label="Pengumuman">7 Jan 2027</td>
+                <td data-label="Portal"><a href="https://apply.nycu.edu.tw" target="_blank" rel="noopener">apply.nycu.edu.tw</a></td>
+              </tr>
+              <tr>
+                <td data-label="Universitas">Fu Jen Catholic University (FJU)</td>
+                <td data-label="Periode">1 Okt – 20 Nov 2026</td>
+                <td data-label="Pengumuman">21 Jan 2027</td>
+                <td data-label="Portal"><a href="https://overseasstu.daa.fju.edu.tw" target="_blank" rel="noopener">overseasstu.daa.fju.edu.tw</a></td>
+              </tr>
+              <tr>
+                <td data-label="Universitas">National Taiwan Ocean University (NTOU)</td>
+                <td data-label="Periode">7 Sep – 30 Nov 2026</td>
+                <td data-label="Pengumuman">25 Jan 2027</td>
+                <td data-label="Portal"><a href="https://oiaexam.ntou.edu.tw" target="_blank" rel="noopener">oiaexam.ntou.edu.tw</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="section__lead reveal" style="margin-top:1.75rem; font-size:var(--fs-small);">
+          <strong>Catatan:</strong> universitas yang belum memenuhi kuota umumnya membuka Gelombang 2 (Round 2) sekitar Februari 2027. Universitas elit seperti NTU umumnya hanya merekrut sisa kuota melalui jalur Yin Fu Ban. Jadwal dapat berubah — selalu cek portal resmi masing-masing universitas.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== LANGKAH BERIKUTNYA ===================== -->
+    <section class="section section--mist" aria-labelledby="langkah-title">
+      <div class="container">
+        <div class="section__header reveal">
+          <p class="eyebrow">Setelah Memilih Jalur</p>
+          <h2 class="section__title" id="langkah-title">Langkah selanjutnya</h2>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <p class="step__num">01</p>
+            <h3 class="step__title">Siapkan Dokumen</h3>
+            <p class="step__desc">Kumpulkan dokumen sekolah &amp; pribadi yang dibutuhkan untuk proses verifikasi.</p>
+          </div>
+          <div class="step reveal reveal--delay-1">
+            <p class="step__num">02</p>
+            <h3 class="step__title">Datang &amp; Verifikasi</h3>
+            <p class="step__desc">Bawa dokumen secara fisik ke Kedungsari 45, Surabaya untuk diverifikasi dan distempel.</p>
+          </div>
+          <div class="step reveal reveal--delay-2">
+            <p class="step__num">03</p>
+            <h3 class="step__title">Daftar ke Universitas</h3>
+            <p class="step__desc">Dokumen siap dipakai untuk mendaftar ke universitas pilihanmu di Taiwan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="site-footer__art" aria-hidden="true">
+      <img src="assets/ink/waves.svg" alt="">
+    </div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img class="footer-brand__logo" src="logo.jpeg" alt="Logo ICATI Jatim — Ikatan Citra Alumni Taiwan Indonesia" width="52" height="52">
+          <p class="footer-brand__title font-brush">ICATI Jatim</p>
+          <p class="footer-brand__desc">Ikatan Citra Alumni Taiwan Indonesia — jembatan budaya menuju pendidikan di Taiwan sejak 1987.</p>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-col__head">Navigasi Cepat</p>
+          <div class="footer-links">
+            <a href="index.html">Beranda</a>
+            <a href="tentang.html">Tentang ICATI Jatim</a>
+            <a href="pendaftaran.html">Info Pendaftaran</a>
+            <a href="poster.html">Galeri Poster</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-col__head">Kontak</p>
+          <ul class="footer-contact">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg> Kedungsari 45, Surabaya</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 20h8m-4-4v4"/><circle cx="12" cy="9" r="4"/><path d="M5 20c.5-3.5 3.4-5 7-5s6.5 1.5 7 5"/></svg> Lanny — Contact Person</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg> <a href="tel:+6281235669988">0812 3566 9988</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-col__head">Media Sosial</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/icatijatim" target="_blank" rel="noopener" aria-label="Instagram ICATI Jatim — @icatijatim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> ICATI Jatim · Ikatan Citra Alumni Taiwan Indonesia. Hak cipta dilindungi.</p>
+        <div class="footer-bottom__links">
+          <a href="#">Kebijakan Privasi</a>
+          <a href="https://joshowen.id" target="_blank" rel="noopener">Made by joshowen.id</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

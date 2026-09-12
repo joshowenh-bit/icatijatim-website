@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" role="img" aria-label="Foto (sementara)">
+  <rect width="300" height="400" fill="#EFEADF"/>
+  <path d="M0,330 L70,250 L130,310 L200,220 L300,300 L300,400 L0,400 Z" fill="#AEBFC0" opacity="0.35"/>
+  <path d="M0,370 L80,320 L160,360 L240,300 L300,340 L300,400 L0,400 Z" fill="#73745E" opacity="0.25"/>
+  <g fill="none" stroke="#8C765D" stroke-width="2" stroke-linecap="round" opacity="0.5">
+    <path d="M60,180 C150,160 240,190 300,180"/>
+  </g>
+  <text x="150" y="130" font-family="Georgia, serif" font-size="20" letter-spacing="6" text-anchor="middle" fill="#8C765D">FOTO</text>
+  <text x="150" y="158" font-family="Georgia, serif" font-size="11" letter-spacing="2" text-anchor="middle" fill="#8C765D" opacity="0.7">Segera tersedia</text>
+</svg>

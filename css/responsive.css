@@ -1,0 +1,265 @@
+/* ==========================================================================
+   ICATI Jatim — Responsif
+   Desktop → tablet → ponsel
+   ========================================================================== */
+
+/* ---------- Layar besar (default desktop) ---------- */
+
+/* ---------- < 1080px : tablet lanskap ---------- */
+@media (max-width: 1080px) {
+  .scroll-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-5);
+  }
+  .hero__branch {
+    width: min(40vw, 420px);
+  }
+}
+
+/* ---------- < 840px : tablet / ponsel besar ---------- */
+@media (max-width: 840px) {
+  .main-nav {
+    display: none;
+  }
+  .menu-toggle {
+    display: inline-flex;
+    margin-left: auto;
+  }
+
+  .hero {
+    min-height: 0;
+    padding-top: calc(var(--nav-h) + 1rem);
+    padding-bottom: var(--space-5);
+  }
+  .hero__content {
+    margin-left: 0;
+    max-width: 620px;
+    padding-inline: clamp(1.25rem, 5vw, 2.5rem);
+  }
+  .hero__vertical {
+    display: none;
+  }
+  .hero__branch {
+    top: auto;
+    bottom: 2%;
+    right: -8%;
+    width: min(46vw, 340px);
+    opacity: 0.4;
+  }
+  .hero__clouds {
+    top: 2%;
+    width: min(70vw, 520px);
+    opacity: 0.6;
+  }
+  .hero__mountains {
+    opacity: 0.75;
+  }
+
+  .split,
+  .split--reverse .split__media {
+    grid-template-columns: 1fr;
+  }
+  .split--reverse .split__media {
+    order: 0;
+  }
+  .split__media {
+    max-width: 520px;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .pathways {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-duo {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  /* Tiga poster tetap dalam satu baris — diperkecil, bukan ditumpuk */
+  .event-gallery {
+    grid-auto-columns: minmax(150px, 1fr);
+    gap: 1rem;
+  }
+  .event-card img {
+    height: 230px;
+  }
+  .event-card__caption {
+    padding: 0.7rem 0.85rem;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+  }
+
+  .page-hero__content {
+    padding-inline: 0;
+  }
+}
+
+/* ---------- < 560px : ponsel ---------- */
+@media (max-width: 560px) {
+  .scroll-cards {
+    grid-template-columns: 1fr;
+  }
+  .scroll-card {
+    min-height: 0;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: var(--space-3);
+  }
+  .scroll-card__title {
+    writing-mode: horizontal-tb;
+    min-height: 0;
+    margin-top: 0.5rem;
+    font-size: var(--fs-h4);
+  }
+  .scroll-card__desc {
+    margin-top: 0;
+    padding: 0;
+    border-top: none;
+    font-size: 0.85rem;
+  }
+  .scroll-card__art {
+    display: none;
+  }
+
+  .hero__title {
+    font-size: clamp(2.4rem, 12vw, 3.4rem);
+  }
+  .hero__actions .btn {
+    width: 100%;
+  }
+  .hero__scroll {
+    display: none;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-bottom__links {
+    justify-content: center;
+  }
+
+  .path {
+    padding: var(--space-4) var(--space-3) var(--space-3);
+  }
+  .timeline-year__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+  .students-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+  .photo__ring {
+    display: none;
+  }
+  .gallery__item img {
+    height: 230px;
+  }
+  .info-links {
+    grid-template-columns: 1fr;
+  }
+  /* Stempel di samping judul: diperkecil supaya judul tidak terpotong */
+  .title-with-seal {
+    gap: 0.7rem;
+  }
+  .title-seal {
+    width: 36px;
+    height: 36px;
+  }
+  /* Ponsel: poster tetap sebaris, digeser ke samping (bukan ditumpuk) */
+  .event-gallery {
+    grid-auto-columns: 74%;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    padding: 0.25rem 0.25rem 1rem;
+    scrollbar-width: thin;
+  }
+  .event-card {
+    scroll-snap-align: center;
+  }
+  /* Hindari efek angkat yang terpotong di wadah yang bisa digeser */
+  .event-card:hover,
+  .event-card:focus-visible {
+    transform: none;
+    box-shadow: none;
+    border-color: rgba(39, 40, 36, 0.14);
+  }
+  .event-card img {
+    height: 300px;
+  }
+}
+
+/* ---------- < 380px : ponsel kecil ---------- */
+@media (max-width: 380px) {
+  .brand__title {
+    font-size: 1.5rem;
+  }
+  .students-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Tabel universitas responsif ---------- */
+@media (max-width: 720px) {
+  .table-wrap {
+    border: none;
+    background: transparent;
+  }
+  .uni-table thead {
+    display: none;
+  }
+  .uni-table,
+  .uni-table tbody,
+  .uni-table tr,
+  .uni-table td {
+    display: block;
+    width: 100%;
+  }
+  .uni-table tr {
+    background: var(--ivory-deep);
+    border: var(--border-soft);
+    padding: 0.4rem 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+  .uni-table td {
+    border-bottom: none;
+    padding: 0.35rem 0.6rem;
+  }
+  .uni-table td::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.6rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--brown);
+    margin-bottom: 0.1rem;
+  }
+  .carousel__btn {
+    width: 38px;
+    height: 38px;
+  }
+  .carousel__slide {
+    flex: 0 0 68%;
+    padding: 0 2.25rem;
+  }
+}

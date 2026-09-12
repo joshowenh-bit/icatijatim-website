@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 420" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="mist1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#AEBFC0" stop-opacity="0.0"/>
+      <stop offset="1" stop-color="#AEBFC0" stop-opacity="0.28"/>
+    </linearGradient>
+  </defs>
+  <!-- distant misty ridge -->
+  <path d="M0,300 L90,215 L200,285 L330,150 L460,260 L590,120 L740,250 L880,140 L1020,260 L1150,110 L1290,245 L1390,160 L1440,200 L1440,420 L0,420 Z" fill="url(#mist1)"/>
+  <!-- mid ridge -->
+  <path d="M0,350 L140,280 L300,335 L460,235 L620,325 L780,215 L940,315 L1100,240 L1260,330 L1440,285 L1440,420 L0,420 Z" fill="#73745E" fill-opacity="0.16"/>
+  <!-- near ridge -->
+  <path d="M0,395 L180,355 L380,390 L560,330 L760,388 L940,330 L1120,388 L1300,345 L1440,380 L1440,420 L0,420 Z" fill="#272824" fill-opacity="0.10"/>
+  <!-- mist bands -->
+  <ellipse cx="320" cy="300" rx="260" ry="26" fill="#F4F0E7" opacity="0.5"/>
+  <ellipse cx="980" cy="250" rx="300" ry="30" fill="#F4F0E7" opacity="0.45"/>
+  <!-- tiny birds -->
+  <g fill="#272824" opacity="0.35">
+    <path d="M760,110 q10,-9 22,-3 q-12,-2 -22,3 z M782,107 q10,-9 24,-4 q-12,-1 -24,4 z"/>
+    <path d="M1120,150 q9,-8 20,-3 q-11,-2 -20,3 z"/>
+  </g>
+</svg>

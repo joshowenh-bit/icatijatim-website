@@ -1,0 +1,72 @@
+/* ==========================================================================
+   ICATI Jatim — Design Tokens
+   Palet tinta-cina, tipografi, jarak, transisi
+   ========================================================================== */
+
+:root {
+  /* ---- Warna dasar (warm ivory / kertas beras) ---- */
+  --ivory: #F4F0E7;
+  --ivory-deep: #EFEADF;
+  --mist: #D8DAD5;
+  --bluegray: #AEBFC0;
+  --bluegray-deep: #8FA6A8;
+  --charcoal: #272824;
+  --charcoal-soft: #4A4B45;
+  --brown: #8C765D;
+  --brown-deep: #6F5C46;
+  --olive: #73745E;
+  --olive-deep: #5A5B47;
+  --cinnabar: #A94332;
+  --cinnabar-deep: #8E3727;
+
+  /* ---- Tingkat kepekatan tinta ---- */
+  --ink-faint: 0.08;
+  --ink-soft: 0.16;
+  --ink-mid: 0.28;
+  --ink-strong: 0.45;
+
+  /* ---- Tipografi ---- */
+  --font-brush: "Playfair Display", Georgia, "Times New Roman", serif; /* judul kini memakai serif profesional */
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+
+  --fs-hero: clamp(3rem, 7vw, 5.6rem);
+  --fs-h1: clamp(2.4rem, 5vw, 3.9rem);
+  --fs-h2: clamp(1.85rem, 3.4vw, 2.9rem);
+  --fs-h3: clamp(1.28rem, 2vw, 1.62rem);
+  --fs-h4: clamp(1.06rem, 1.4vw, 1.2rem);
+  --fs-body: clamp(1rem, 1.05vw, 1.125rem);
+  --fs-small: 0.92rem;
+  --fs-annotation: 0.72rem;
+
+  /* ---- Jarak ---- */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: 4rem;
+  --space-6: 6.5rem;
+  --section-y: clamp(4.5rem, 9vw, 9rem);
+
+  /* ---- Tata letak ---- */
+  --container: 1240px;
+  --reading: 66ch;
+  --nav-h: 88px;
+  --nav-h-compact: 66px;
+
+  /* ---- Garis & bayangan ---- */
+  --border-soft: 1px solid rgba(39, 40, 36, 0.14);
+  --border-faint: 1px solid rgba(39, 40, 36, 0.09);
+  --shadow-soft: 0 22px 48px -26px rgba(39, 40, 36, 0.38);
+
+  /* ---- Transisi ---- */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --t-fast: 200ms var(--ease);
+  --t-med: 440ms var(--ease);
+  --t-slow: 1000ms var(--ease);
+
+  /* ---- Breakpoint ---- */
+  --bp-lg: 1080px;
+  --bp-md: 840px;
+  --bp-sm: 560px;
+}

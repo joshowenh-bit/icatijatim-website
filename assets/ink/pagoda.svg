@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 420" aria-hidden="true">
+  <g fill="#272824" opacity="0.16">
+    <!-- spire -->
+    <path d="M110,26 L110,92" stroke="#272824" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M104,26 L116,26 L110,14 Z"/>
+    <!-- tier 3 -->
+    <path d="M88,96 C96,74 124,74 132,96 C116,82 104,82 88,96 Z"/>
+    <path d="M97,96 L123,96 L123,132 L97,132 Z"/>
+    <!-- tier 2 -->
+    <path d="M62,152 C78,124 142,124 158,152 C136,136 84,136 62,152 Z"/>
+    <path d="M86,152 L134,152 L134,198 L86,198 Z"/>
+    <!-- tier 1 -->
+    <path d="M26,220 C50,186 170,186 194,220 C160,200 60,200 26,220 Z"/>
+    <path d="M74,220 L146,220 L146,278 L74,278 Z"/>
+    <!-- base -->
+    <path d="M56,278 L164,278 L172,320 L48,320 Z"/>
+  </g>
+</svg>

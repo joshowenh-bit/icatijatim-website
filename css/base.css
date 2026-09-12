@@ -1,0 +1,311 @@
+/* ==========================================================================
+   ICATI Jatim — Base
+   Reset, tipografi dasar, utilitas, tombol
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tekstur kertas beras — butiran halus */
+body {
+  background-color: var(--ivory);
+  background-image:
+    radial-gradient(ellipse 80% 55% at 50% -5%, rgba(174, 191, 192, 0.14), transparent 60%),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/><feComponentTransfer><feFuncA type='linear' slope='0.045'/></feComponentTransfer></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  color: var(--charcoal);
+  font-family: var(--font-serif);
+  font-size: var(--fs-body);
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--cinnabar-deep);
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  line-height: 1.22;
+  letter-spacing: -0.01em;
+}
+
+p {
+  max-width: var(--reading);
+}
+
+::selection {
+  background: rgba(169, 67, 50, 0.22);
+  color: var(--charcoal);
+}
+
+/* ---- Fokus aksesibel ---- */
+:focus-visible {
+  outline: 2px solid var(--cinnabar);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ---- Skip link ---- */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  z-index: 100;
+  background: var(--charcoal);
+  color: var(--ivory);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  padding: 0.8rem 1.2rem;
+  text-decoration: none;
+  transition: left var(--t-fast);
+}
+.skip-link:focus {
+  left: 0;
+}
+
+/* ---- Tipografi fungsional ---- */
+.font-brush {
+  font-family: var(--font-brush);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-family: var(--font-sans);
+  font-size: var(--fs-annotation);
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--cinnabar);
+}
+.eyebrow::before {
+  content: "";
+  width: 2.4rem;
+  height: 1px;
+  background: var(--cinnabar);
+  opacity: 0.75;
+}
+
+/* Label vertikal (gaya cetak Asia Timur) */
+.v-label {
+  writing-mode: vertical-rl;
+  font-family: var(--font-sans);
+  font-size: var(--fs-annotation);
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: var(--brown);
+  opacity: 0.75;
+  user-select: none;
+}
+
+/* ---- Tombol ---- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.95rem 1.9rem;
+  border: 1px solid var(--charcoal);
+  color: var(--charcoal);
+  background: transparent;
+  transition: background var(--t-fast), color var(--t-fast), border-color var(--t-fast), transform var(--t-fast);
+}
+.btn:hover,
+.btn:focus-visible {
+  border-color: var(--cinnabar);
+  color: var(--cinnabar);
+  background: rgba(169, 67, 50, 0.06);
+}
+.btn--primary {
+  background: var(--charcoal);
+  color: var(--ivory);
+  border-color: var(--charcoal);
+}
+.btn--primary:hover,
+.btn--primary:focus-visible {
+  background: var(--cinnabar);
+  border-color: var(--cinnabar);
+  color: var(--ivory);
+}
+.btn--seal {
+  border-color: var(--cinnabar);
+  color: var(--cinnabar-deep);
+}
+.btn--seal:hover,
+.btn--seal:focus-visible {
+  background: var(--cinnabar);
+  color: var(--ivory);
+}
+
+/* ---- Stempel kecil (cinnabar) ---- */
+.seal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex: none;
+  border: 2px solid var(--cinnabar);
+  border-radius: 22% 30% 24% 26%;
+  color: var(--cinnabar);
+  font-family: "Kaiti SC", "STKaiti", "KaiTi", serif;
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+/* ---- Utilitas tata letak ---- */
+.container {
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 2.5rem);
+}
+.container-narrow {
+  max-width: calc(var(--container) * 0.78);
+  margin-inline: auto;
+}
+.section {
+  position: relative;
+  padding-block: var(--section-y);
+}
+.section--mist {
+  background: linear-gradient(180deg, rgba(216, 218, 213, 0.32), rgba(216, 218, 213, 0.12) 70%, transparent);
+}
+.section--deep {
+  background: linear-gradient(180deg, transparent, rgba(174, 191, 192, 0.16) 30%, rgba(174, 191, 192, 0.16) 70%, transparent);
+}
+
+/* Kepala bagian editorial */
+.section__header {
+  margin-bottom: var(--space-5);
+  max-width: var(--reading);
+}
+.section__title {
+  font-size: var(--fs-h2);
+  margin-top: var(--space-2);
+}
+.section__title em {
+  font-style: italic;
+  color: var(--brown-deep);
+}
+
+/* Judul bagian dengan stempel di sisi kiri (rata tengah vertikal) */
+.title-with-seal {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.85rem, 1.5vw, 1.35rem);
+  margin-top: var(--space-2);
+}
+.title-with-seal .section__title {
+  margin-top: 0;
+}
+.title-seal {
+  width: clamp(42px, 3.6vw, 52px);
+  height: clamp(42px, 3.6vw, 52px);
+  object-fit: contain;
+  object-position: center;
+  flex: none;
+  opacity: 0.95;
+}
+.section__lead {
+  margin-top: var(--space-3);
+  color: var(--charcoal-soft);
+}
+
+/* ---- Konten yang muncul saat scroll ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.9s var(--ease), transform 0.9s var(--ease);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+.reveal--delay-1 { transition-delay: 90ms; }
+.reveal--delay-2 { transition-delay: 180ms; }
+.reveal--delay-3 { transition-delay: 270ms; }
+
+/* ---- Gaya placeholder (isi menyusul) ---- */
+.placeholder {
+  border: 1px dashed rgba(39, 40, 36, 0.24);
+  background: rgba(244, 240, 231, 0.55);
+  padding: var(--space-3);
+  color: var(--charcoal-soft);
+  font-size: var(--fs-small);
+  line-height: 1.7;
+}
+.placeholder__tag {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--cinnabar);
+  margin-bottom: 0.4rem;
+}
+
+/* ---- Aksesibilitas ---- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

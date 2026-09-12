@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Logo ICATI (sementara)">
+  <defs>
+    <linearGradient id="lg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#AEBFC0" stop-opacity="0.0"/>
+      <stop offset="1" stop-color="#73745E" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="#8C765D" stroke-width="3" opacity="0.9">
+    <circle cx="60" cy="60" r="50"/>
+    <circle cx="60" cy="60" r="42" stroke-width="1.2" opacity="0.55"/>
+  </g>
+  <path d="M24,74 L40,52 L52,64 L64,46 L82,70 L96,58 L96,86 L24,86 Z" fill="#272824" opacity="0.5"/>
+  <path d="M60,30 c-5,-7 -15,-9 -23,-6 c8,-1 15,1 22,6 z M37,24 c-5,-7 -15,-9 -23,-6 c8,-1 15,1 22,6 z" fill="#272824" opacity="0.55"/>
+  <circle cx="82" cy="34" r="7" fill="#A94332" opacity="0.85"/>
+</svg>
